@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:ital,wght@1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div>
+            <h1>Generate a</h1>
+            <h2>random password</h2>
+            <h3>Never use an insecure password again</h3>
+            <button onclick="passwordGenerate()">
+                Generate passwords
+            </button>
+            <div id="slider-section">
+                <input type="range" min=3 max=20 id="slider" onclick="update()">
+                <p id="pass-length">Password length: 12</p>
+            </div>
+            <input type= "checkbox" id="big-letter" checked>
+            <label for="big-letter">A - Z</label>
+            <input type= "checkbox" id="small-letter" checked>
+            <label for="small-letter">a - z</label>
+            <input type= "checkbox" id="digits" checked>
+            <label for="small-letter">0 - 9</label>
+            <input type= "checkbox" id="special-characters" checked>
+            <label for="small-letter">Special characters</label>
+            <div id="line"></div>
+            <div id="passwords">
+                <p class="password-field" id="first-password-el"></p>
+                <p class="password-field" id="second-password-el"></p>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
